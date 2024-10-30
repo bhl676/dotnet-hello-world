@@ -29,5 +29,3 @@ jobs:
 
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.8
-        with:
-          name: Hello-World-Test-build-artifact
