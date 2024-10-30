@@ -2,6 +2,12 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp8.0</TargetFramework>
+    <PackageId>Test_Project</PackageId>
+    <Version>1.0.0</Version>
+    <Authors>bhl676</Authors>
+    <Company>Ica</Company>
+    <Description>Your package description</Description>
+    <RepositoryUrl>https://github.com/bhl676/dotnet-hello-world</RepositoryUrl>
   </PropertyGroup>
 
   <ItemGroup>
