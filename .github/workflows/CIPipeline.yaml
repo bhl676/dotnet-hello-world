@@ -27,14 +27,7 @@ jobs:
       - name: Build the project
         run: dotnet build --configuration Release --no-restore
 
-      - name: Create nupkgs directory
-        run: mkdir -p nupkgs
-
-      - name: Pack the project
-        run: dotnet pack --configuration Release --output nupkgs --verbosity detailed
-
-      - name: List contents of nupkgs directory
-        run: ls -la nupkgs
-
-      - name: Publish NuGet Package
-        run: dotnet nuget push nupkgs/*.nupkg --source https://nuget.pkg.github.com/${{ github.repository_owner }}/ --api-key ${{ secrets.GITHUB_TOKEN }}
+      - name: Download a Build Artifact
+        uses: actions/download-artifact@v4.1.8
+        with:
+          name: Hello-World-Test-build-artifact
