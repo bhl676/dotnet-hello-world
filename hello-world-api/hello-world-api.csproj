@@ -8,6 +8,7 @@
     <Company>Ica</Company>
     <Description>Your package description</Description>
     <RepositoryUrl>https://github.com/bhl676/dotnet-hello-world</RepositoryUrl>
+    <IsPackable>true</IsPackable>
   </PropertyGroup>
 
   <ItemGroup>
