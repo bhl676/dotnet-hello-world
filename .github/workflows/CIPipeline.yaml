@@ -33,5 +33,8 @@ jobs:
       - name: Pack the project
         run: dotnet pack --configuration Release --output nupkgs
 
+      - name: List contents of nupkgs directory
+        run: ls -la nupkgs
+
       - name: Publish NuGet Package
         run: dotnet nuget push nupkgs/*.nupkg --source https://nuget.pkg.github.com/${{ github.repository_owner }}/ --api-key ${{ secrets.GITHUB_TOKEN }}
